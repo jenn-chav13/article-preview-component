@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          background-color: #62306D;
+          height: 100vh;
+        }
+        .circle:not(.circle.middle) {
+        margin-block: -50px;
+        }
+        .wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          margin-top: 50px;
+        }
+        .circle {
+          border-radius: 50%;
+        }
+        .outer-circle {
+          height: 100px;
+          width: 100px;
+          background-color: #AA445F;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .circle.middle {
+          align-self: flex-start;
+        }
+        .circle.reverse {
+          background-color: #E38F66;
+        }
+        .circle.inner-circle {
+          height: 60px;
+          width: 60px;
+          background-color: #E38F66;
+        }
+        .reverse .inner-circle {
+          background-color: #AA445F;
+        }
+      </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="circle outer-circle">
+            <div class="circle inner-circle"></div>
+        </div>
+        <div class="circle outer-circle reverse middle">
+          <div class="circle inner-circle"></div>
+        </div>
+        <div class="circle outer-circle">
+          <div class="circle inner-circle"></div>
+        </div>
+      </div>  
+</body>
+</html>
+
+  
